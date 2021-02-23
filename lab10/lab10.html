@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width">
+	<title>LAB 10</title>
+	<!-- Library of css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<div id="cssFile">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+	</div>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<center>
+		<!-- header -->
+		<div class="header">
+			<h1>QCC/CUNY</h1>
+			<h2>Software Eng. Mirco-Credential</h2>
+			<h3>Boot Camp</h3>
+			<h4>Lab 10</h4>
+			<h5>Feb 15, 2021</h5>
+			<h6>By Joyce Tan, Lily McDaniel, and Roziena Badree</h6><br>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="topnav">
+      <button type="button" onclick="style1()">Click Me!</button>
+      <button type="button" onclick="style2()">Click Me!</button>
+      <button type="button" onclick="style3()">Click Me!</button>
+      <button type="button" onclick="style4()">Click Me!</button>
+      <button type="button" onclick="style5()">Click Me!</button>
+      <a href="https://www.linkedin.com/in/joyce-tan-34753b156/">Joyce's LinkedIn</a>
+      <a
+      href="https://www.linkedin.com/in/lily-mcdaniel-672a1910b/">Lily's LinkedIn</a>
+      <a href="https://www.farmworkerjustice.org">Farmworker Justice</a>
+    </div><br>
+
+        <div class="row">
+          <div class="column">
+            <h1><i class="glyphicon glyphicon-user"></i> Joyce Tan <i class="glyphicon glyphicon-user"></i></h1><br>
+            <div id="animation1"></div>
+            <br>
+            <p id="first"> I'm from Queens, NY. I attended The City College of New York (CCNY) for two years, then transferred to Queens College. I recently graduated from Queens College with a Bachelor of Science degree in Computer Science and a minor in Mathematics. I am currently looking for any opportunity to gain experience in the tech industry. </p><br>
+          </div>
+          <div class="column">
+            <h1><i class="glyphicon glyphicon-film"></i>Lily McDaniel<i class="glyphicon glyphicon-film"></i></h1>
+            <div id="animation2"></div>
+            <br>
+            <p id="second"> I moved to New York City from Portland, OR to attend Baruch College in 2016 as a Dean’s Scholar. I am currently a senior majoring in Finance and minoring in Mathematics with a Spring 2021 expected graduation. From a young age, I have always been meticulous, and when I found my love for finance my life began to fall into place. I have utilized my analytical and communication skills in courses like econometrics, investment analysis, and corporate finance by leading study sessions and projects among peers. </p><br>
+          </div>
+          <div class="column">
+            <h1><i class="glyphicon glyphicon-music"></i> Roziena Badree <i class="glyphicon glyphicon-music"></i></h1><br>
+            <div id="animation3"></div>
+            <br>
+            <p id="third"> I cracked the code - I finally figured out why I love programming.  I love programming because I love abstractions; I enjoy analyzing code, and most recently, studying number theory.  Who in their right mind would work for free for long hours and over long periods of time just for the shear joy of programming, of creating something cool or useful or badly needed? You don't do this if it's just a job. You do this because you love to program, love the challenge, love the creation, love the difficulty.  I love to program, and if I ever lose that love, I will no longer be a programmer.  That will be a sad day.</p><br>
+          </div>
+        </div>
+    </center>
+
+    <div id="formDiv">
+      <form id="form1">
+        <label for="fname">Name</label>
+        <input type="text" name="FirstName" id="fname" value=""/><br/><br/>
+        <label for="numKids">Number of Children</label>
+        <input type="text" name="NumOfChildren" id="numKids" value=""/><br/><br/>
+        <label for="idealLocale">Ideal Location</label>
+        <input type="text" name="idealLocale" id="idealLocale" value=""/><br/><br/>
+        <label for="idealPartner">Ideal Partner</label>
+        <input type="text" name="idealPartner" id="idealPartner" value=""/><br/><br/>
+      </form>
+      <button onclick="getInfo()">Get Info</button><br>
+      <h1 id="testing"></h1>
+    </div>
+
+    <script>
+      function style1(){
+        document.getElementById("cssFile").innerHTML='<link rel="stylesheet" type="text/css" href="style1.css">';
+      }
+      function style2(){
+        document.getElementById("cssFile").innerHTML='<link rel="stylesheet" type="text/css" href="style2.css">';
+      }
+      function style3(){
+        document.getElementById("cssFile").innerHTML='<link rel="stylesheet" type="text/css" href="style3.css">';
+      }
+      function style4(){
+        document.getElementById("cssFile").innerHTML='<link rel="stylesheet" type="text/css" href="style4.css">';
+      }
+      function style5(){
+        document.getElementById("cssFile").innerHTML='<link rel="stylesheet" type="text/css" href="style5.css">';
+      }
+      function getInfo(){
+        var x = document.getElementById("form1");
+        var text = "Hi, " + x.elements[0].value + ". You will have " + x.elements[1].value + " children in the future. You will live in " + x.elements[2].value + " and you will be married to " + x.elements[3].value + ".";
+
+        document.getElementById("testing").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

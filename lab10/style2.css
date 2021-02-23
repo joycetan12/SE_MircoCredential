@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+.header{
+  font-family: monospace;
+  padding: 20px;
+  background-image: url("header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: midnightblue;
+}
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  overflow: hidden;
+}
+/* Links - change color on hover  */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.row{
+  width: 100%;
+  padding: 10px;
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+  display: block;
+  width: 33.33%;
+  padding: 20px;
+  border: transparent;
+  font-family: monospace;
+  float: left;
+}
+#formDiv{
+  border: solid;
+  border-color: purple;
+  background-color: lavender;
+  color: purple;
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+/* Added by Joyce - Start */
+#animation1 {
+  width: 90%;
+  height: 5px;
+  background-color: skyblue;
+  position: relative;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move {
+  0% {background-color:skyblue; left:0px; top:0px;}
+  50% {background-color: mediumspringgreen; left:0px; top:-45px;}
+  100% {background-color:red; left:0px; top:-90px;}
+}
+/* Added by Joyce - End */
+
+/*Added by Lily - Start*/
+#animation2 {
+  width: 90%;
+  height: 5px;
+  background-color: palevioletred;
+  animation: roll 3s;
+  transform: rotate(360deg);
+  opacity: 70%;
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*Added by Lily - End*/
+
+/*Added by Roziena - Start*/
+#animation3 {
+  width: 50%;
+  height: 5px;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
