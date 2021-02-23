@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width">
+	<title>LAB 12</title>
+	<!-- Library of css-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<div id="cssFile">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+	</div>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<center>
+		<!-- header -->
+		<div class="header">
+			<h1>QCC/CUNY</h1>
+			<h2>Software Eng. Mirco-Credential</h2>
+			<h3>Boot Camp</h3>
+			<h4>Lab 12</h4>
+			<h5>Feb 22, 2021</h5>
+			<h6>By Joyce Tan</h6><br>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="topnav">
+      <a href="https://www.linkedin.com/in/joyce-tan-34753b156/">Joyce's LinkedIn</a>
+    </div><br>
+
+        <div class="row">
+					<!-- Quadratic Equation -->
+          <div class="column1">
+            <h1><i class="glyphicon glyphicon-star"></i>Quadratic Equation<i class="glyphicon glyphicon-star"></i></h1><br>
+            <div id="animation1"></div><br>
+						<button onclick="getQuadratic()">Calculate Quadratic</button><br><br>
+            <p id="first"></p><br>
+          </div>
+
+					<!-- Fortune Teller -->
+          <div class="column2">
+            <h1><i class="glyphicon glyphicon-film"></i>Fortune Teller<i class="glyphicon glyphicon-film"></i></h1>
+            <div id="animation2"></div>
+            <br>
+						<form id="form1">
+							<label for="fname">Name</label>
+							<input type="text" name="FirstName" id="fname" value=""/><br><br>
+							<label for="numKids">Number of Children</label>
+							<input type="text" name="NumOfChildren" id="numKids" value=""/><br><br>
+							<label for="idealLocale">Ideal Location</label>
+							<input type="text" name="idealLocale" id="idealLocale" value=""/><br><br>
+							<label for="idealPartner">Ideal Partner</label>
+							<input type="text" name="idealPartner" id="idealPartner" value=""/><br><br>
+						</form>
+						<button onclick="getInfo()">Get Info</button><br><br>
+            <p id="second"></p><br>
+          </div>
+
+					<!-- Cylinder Volume -->
+          <div class="column3">
+            <h1><i class="glyphicon glyphicon-cd"></i>Cylinder Volume<i class="glyphicon glyphicon-cd"></i></h1><br>
+            <div id="animation3"></div><br>
+						<button onclick="getVolume()">Calculate Volume</button><br><br>
+            <p id="third"></p><br><br>
+          </div>
+        </div>
+    </center>
+
+    <script src="lab12.js"></script>
+
+  </body>
+</html>
