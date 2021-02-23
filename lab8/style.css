@@ -1,0 +1,109 @@
+/* box model */
+*{
+  box-sizing: border-box;
+}
+/* margin and padding for body */
+body{
+  margin: 3px;
+  padding: 10px;
+}
+/* style for header */
+.header{
+  background-color: #f1f1f1;
+  padding: 10px;
+  background-image: linear-gradient(beige, black);
+}
+/* style for top navigation bar */
+.topnav{
+  overflow: hidden;
+  background-color: #333;
+}
+/* style for anchors in top navigation bar */
+.topnav a{
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 14px;
+}
+/* style for anchors hover in top navigation bar */
+.topnav a:hover{
+  background-color: #ddd;
+  color: #000;
+}
+/* sub body background color */
+.row{
+  background-color: ghostwhite;
+}
+/* clear floats after the columns */
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* create three equal columns that floats next to each other  */
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+/* responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px){
+  .column{
+    width:100%;
+  }
+}
+@keyframes sami{
+  from{background-color: red;}
+  to{background-color: green;}
+}
+@keyframes sami1{
+  0%{background-color: red;}
+  25%{background-color: yellow;}
+  50%{background-color: blue;}
+  100%{background-color: green;}
+}
+/* specifies font and color for id="id1" */
+#id1{
+  font-family: 'Trebuchet Ms', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #457893;
+  background-color: yellow;
+  animation-name: sami1;
+  animation-duration: 5000ms;
+}
+/* specifies font and color for id="id2" */
+#id2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #457893;
+}
+/* specifies font and color for id="id3" */
+#id3{
+  font-family: fantasy;
+  color: red;
+}
+/* specifies font for h1-h3 */
+h1, h2, h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#opi{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  transition-duration: 5000ms;
+  /* transform: translate(200px, 200px) scale(2,3) skew(45deg); */
+  transform: matrix(-0.3, -0.3, 0, 8, -10, 50);  /* scalex, skewx, skewy, scaley, */
+  animation-name: sami;
+  animation-duration: 5000ms;
+}
+a:link{
+  color: aqua;
+}
+a:visited{
+  color: crimson;
+}
+a:hover{
+  color: greenyellow;
+}
+a:active{
+  color: yellow;
+}
