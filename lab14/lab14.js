@@ -1,4 +1,4 @@
-// item: price
+// available items - item: price
 var items = {
   coke: 1.5,
   water: 1,
@@ -7,7 +7,7 @@ var items = {
   coffee: 2.75
 };
 
-// item: qty
+// shopping cart - item: qty
 var cart = {
   coke: 0,
   water: 0,
@@ -48,6 +48,16 @@ function addItems(){
   else{
     alert("The item you entered does not exist in the available items. Please try again");
   }
+}
+
+// empties shopping cart
+function emptyCart(){
+  document.getElementById("cart").innerHTML = "";
+  cart.coke = 0;
+  cart.water = 0;
+  cart.gatorade = 0;
+  cart.tea = 0;
+  cart.coffee = 0;
 }
 
 // calculates/prints receipt for cart
