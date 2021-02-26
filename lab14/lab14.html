@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width">
+	<title>LAB 14</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+	<center>
+		<!-- header -->
+		<div class="header">
+			<h1>QCC/CUNY</h1>
+			<h2>Software Eng. Mirco-Credential</h2>
+			<h3>Boot Camp</h3>
+			<h4>Lab 14</h4>
+			<h5>Feb 24, 2021</h5>
+			<h6>By Joyce Tan</h6><br>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="topnav">
+      <a href="https://www.linkedin.com/in/joyce-tan-34753b156/">Joyce's LinkedIn</a>
+    </div><br>
+
+		<!-- Drink Machine -->
+    <div class="row">
+			<h1>Drinks - Vending Machine <i class="glyphicon glyphicon-shopping-cart"></i></h1><br>
+
+			<!-- Items -->
+			<div class="column">
+				<h2>Items</h2><br>
+				<ul>
+					<li>Coke: $1.50</li>
+					<li>Water: $1.00</li>
+					<li>Gatorade: $2.25</li>
+					<li>Tea: $1.25</li>
+					<li>Coffee: $2.75</li>
+				</ul>
+			</div>
+
+			<!-- Shopping Cart Activity -->
+			<div class="column">
+				<h2>Shopping Cart</h2><br>
+				<p id="cart"></p><br>
+				<button id="add" onclick="addItems()">Add Items</button>
+			</div>
+
+			<!-- Receipt -->
+			<div class="column">
+				<h2>Receipt</h2><br>
+				<p id="receipt"></p><br>
+				<button id="print" onclick="cashRegister()">Print Receipt</button><br><br>
+			</div>
+
+    </div>
+
+    <script src="lab14.js"></script>
+
+  </body>
+</html>
