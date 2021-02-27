@@ -1,0 +1,67 @@
+/* box model */
+*{
+  box-sizing: border-box;
+}
+/* body bg color */
+body{
+  background-color: #424949;
+}
+/* style for header */
+.header{
+  font-family: monospace;
+  padding: 20px;
+  border: solid;
+  background-image: url("header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+/* style for row div*/
+.row {
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* text color for ninja info  */
+#ninjaInfo {
+  color: white;
+}
+/* style for ninja image */
+#ninjaImg {
+  display: inline-block;
+  background-color: inherit;
+}
+/* style for create ninja button */
+#create {
+  display: inline-block;
+  padding: 15px;
+  background-color: green;
+  color: white;
+}
+/* style for power 1 button */
+#power1 {
+  display: none;
+  padding: 15px;
+  width: 100px;
+  height:50px;
+}
+/* style for power 2 button */
+#power2 {
+  display: none;
+  padding: 15px;
+  width: 100px;
+  height:50px;
+}
+/* style for power 3 button */
+#power3 {
+  display: none;
+  padding: 15px;
+  width: 100px;
+  height:50px;
+}
