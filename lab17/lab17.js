@@ -19,13 +19,13 @@ $(document).ready(function(){
   $("#decOpacity").click(function(){
     $(".box").animate({
       opacity: '-=0.2'
-    });
+    }, 5000);
   });
   // when incOpacity button is clicked, the opacity of div box will increase
   $("#incOpacity").click(function(){
     $(".box").animate({
       opacity: '+=0.2'
-    });
+    }, 5000);
   });
   // when right button is clicked, the div box will move to the right
   $("#right").click(function(){
@@ -55,13 +55,13 @@ $(document).ready(function(){
   $("#circle").click(function(){
     $(".box").animate({
       'border-radius': '100%'
-    });
+    }, 5000);
   });
   // when square button is clicked, the div box will move up turn into a square
   $("#square").click(function(){
     $(".box").animate({
       'border-radius': '0%'
-    });
+    }, 5000);
   });
   // when slide button is clicked, the div box will slide to the right and
   // then slide back to the left. Opacity of the box will decrease while sliding
