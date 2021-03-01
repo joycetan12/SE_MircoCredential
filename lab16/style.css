@@ -14,26 +14,6 @@ body {
   border: outset;
   border-color: navy;
 }
-/* The navbar container */
-.topnav {
-  overflow: hidden;
-  background-color: #131E3A;
-}
-/* Navbar links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  overflow: hidden;
-}
-/* Links - change color on hover  */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 /* main div that holds the column divs  */
 .row{
   width: 100%;
