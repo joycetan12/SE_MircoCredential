@@ -60,11 +60,15 @@ a:hover {
   height: 400px;
   margin-bottom: 20px;
 }
-.textDiv{
+.textDiv {
   border-style: double;
   float: left;
   padding-left: 25px;
   width: 50%;
   height: 400px;
   margin-bottom: 20px;
+}
+.LI-profile-badge, .twitter-follow {
+  float: left;
+  margin: 20px;
 }
