@@ -1,0 +1,70 @@
+/* box model */
+*{
+  box-sizing: border-box;
+}
+/* background color for webpage */
+body {
+  background-color: #FFE1AD;
+}
+/* style for header */
+.header {
+  padding: 30px;
+  border-style: outset;
+  border-color: black;
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  text-align: center;
+}
+/* style for top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+/* style for links in top navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* changes bg color and text color when hovering over a hyperlink */
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* padding for main div */
+.mainDiv {
+  padding: 20px;
+}
+/* clear floats */
+.mainDiv::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.labImgDiv {
+  float: left;
+  background-image: url("img/coding.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.projImgDiv {
+  float: left;
+  background-image: url("img/project.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.textDiv{
+  border-style: double;
+  float: left;
+  padding-left: 25px;
+  width: 50%;
+  height: 400px;
+  margin-bottom: 20px;
+}
