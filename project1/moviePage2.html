@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-    }
-    .header, .credit {
-      border-style: outset;
-    }
-  </style>
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width+device-width">
     <title>Project 1</title>
+    <link rel="stylesheet" type="text/css" href="moviePageStyle.css">
   </head>
 
   <body>
     <center>
+      <!-- header -->
       <div class="header">
         <h1>MY FAVORITE MOVIES</h1>
         <h5>By Joyce Tan</h5>
       </div>
-
-      <a href="index.html"><h3>Home</h3></a><br>
-      <img src="movie2.jpg" alt="Captian America: The Winter Soldier" width="150px">
-
-      <table>
-        <tr><h3>CAPTIAN AMERICA: THE WINTER SOLDIER</h3></tr>
-        <tr><b>Description:</b> Captain America: The Winter Soldier is a 2014 American superhero film based on the Marvel Comics character Captain America, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Captain America: The First Avenger (2011) and the ninth film in the Marvel Cinematic Universe (MCU). The film was directed by Anthony and Joe Russo from a screenplay by the writing team of Christopher Markus and Stephen McFeely. It stars Chris Evans as Steve Rogers / Captain America alongside Scarlett Johansson, Sebastian Stan, Anthony Mackie, Cobie Smulders, Frank Grillo, Emily VanCamp, Hayley Atwell, Robert Redford, and Samuel L. Jackson. In the film, Captain America joins forces with Black Widow and Falcon to uncover a conspiracy within the spy agency S.H.I.E.L.D. while facing a mysterious assassin known as the Winter Soldier.</tr><br><br>
-        <tr><b>Directed By:</b> Anthony Russo, Joe Russo</tr><br><br>
-        <tr><b>Produced By:</b> Kevin Feige</tr><br><br>
-        <tr><b>Cast:</b> Chris Evans, Scarlett Johansson, Sebastian Stan, Anthony Mackie, Cobie Smulders, Frank Grillo, Emily VanCamp, Hayley Atwell, Robert Redford, Samuel L. Jacksonn</tr><br><br>
-      </table>
-
-      <a href="moviePage1.html"><h3>Previous Movie</h3></a>
-      <a href="moviePage3.html"><h3>Next Movie</h3></a>
-
-      <div class="credit">
-        <h3>Source Credits</h3>
-        <p>Captain America: The Winter Soldier image source: <a href="https://resizing.flixster.com/U_be0EesHZtFjTipJYAEIaVeDXo=/206x305/v2/https://flxt.tmsimg.com/assets/p9895254_p_v10_ak.jpg">Click Here</a></p>
-        <p>Captain America: The Winter Soldier description source: <a href="https://en.wikipedia.org/wiki/Captain_America:_The_Winter_Soldier">Click Here</a></p>
+      <!-- navigation bar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="moviepage1.html">The Avengers</a>
+        <a href="moviepage2.html">Captain America: The Winter Soldier</a>
+        <a href="moviepage3.html">The Maze Runner</a>
+        <a href="credits.html">Credits</a>
       </div>
+      <!-- main div in body -->
+      <div class="box">
+        <!-- sub column div in main div -->
+        <div class="col">
+          <img src="movie2.jpg" alt="Captian America: The Winter Soldier" width="300px">
+        </div>
+        <!-- sub column div in main div -->
+        <div class="col">
+          <h2>CAPTIAN AMERICA: THE WINTER SOLDIER</h2>
+          <p><b>Directed By:</b> Anthony Russo, Joe Russo</p>
+          <p><b>Produced By:</b> Kevin Feige</p>
+          <p><b>Cast:</b> Chris Evans, Scarlett Johansson, Sebastian Stan, Anthony Mackie, Cobie Smulders, Frank Grillo, Emily VanCamp, Hayley Atwell, Robert Redford, Samuel L. Jackson</p>
+          <p><b>Description:</b> Captain America: The Winter Soldier is a 2014 American superhero film based on the Marvel Comics character Captain America, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Captain America: The First Avenger (2011) and the ninth film in the Marvel Cinematic Universe (MCU). The film was directed by Anthony and Joe Russo from a screenplay by the writing team of Christopher Markus and Stephen McFeely. It stars Chris Evans as Steve Rogers / Captain America alongside Scarlett Johansson, Sebastian Stan, Anthony Mackie, Cobie Smulders, Frank Grillo, Emily VanCamp, Hayley Atwell, Robert Redford, and Samuel L. Jackson. In the film, Captain America joins forces with Black Widow and Falcon to uncover a conspiracy within the spy agency S.H.I.E.L.D. while facing a mysterious assassin known as the Winter Soldier.</p>
+        </div>
+      </div>
+
     </center>
   </body>
 </html>

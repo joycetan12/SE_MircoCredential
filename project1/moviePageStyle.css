@@ -1,0 +1,55 @@
+/* box model */
+* {
+  box-sizing: border-box;
+}
+/* style for page body */
+body {
+  background-color: black;
+  color: white;
+}
+/* style for header */
+.header {
+  padding: 10px 14px;
+  border-style: outset;
+  background-image: url("header.jpg");
+}
+/* style for top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #103E7A;
+}
+/* style for links in top navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 14px;
+}
+/* change bg color and text color when hovering over a hyperlink */
+a:hover{
+  background-color: #ddd;
+  color: #000;
+}
+/* padding for main div in body */
+.box {
+  padding: 20px;
+}
+/* clear floats after the column divs */
+.box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* creates two equal column divs that floats next to each other  */
+.col {
+  float: left;
+  width: 50%;
+  padding: 30px 15px;
+}
+/* responsive layout - makes the column divs stack on top of each other instead of next to each other when width of screen is smaller than 500px */
+@media screen and (max-width: 500px) {
+  .col{
+    width:100%;
+  }
+}
