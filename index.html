@@ -4,53 +4,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width+device-width">
     <title>Index</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/JT-favicon.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="indexStyle.css">
   </head>
 
-  <body>
+  <body id="page-top">
     <!-- header -->
     <div class="header">
-      <h1>WELCOME</h1>
-      <h2>Software Eng. Mirco-Credential</h2>
-      <h2>Joyce Tan</h2>
+      <div class="transBox">
+        <h1>WELCOME</h1>
+        <h2>Software Eng. Mirco-Credential Portfolio</h2>
+        <h2>By Joyce Tan</h2>
+      </div>
     </div>
     <!-- navigation bar -->
+    <!-- <nav class="navbar navbar-dark bg-dark"> -->
+      <!-- logo -->
+      <!-- <a class="navbar-brand" href="#page-top">
+        <img src="img/JT-favicon.png" width="40" height="40" alt="JT">
+      </a>
+      links
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
     <div class="topnav">
-      <a href="index.html">Home</a>
+      <a href="#page-top">Home</a>
+      <a href="#labs">Labs</a>
+      <a href="#projects">Projects</a>
       <a href="https://www.linkedin.com/in/joyce-tan-34753b156/">LinkedIn</a>
     </div>
+
     <!-- main div in body -->
     <div class="mainDiv">
       <!-- div for image inside the main div-->
       <div class="labImgDiv"></div>
       <!-- div for labs inside the main div-->
-      <div class="textDiv">
+      <div class="textDiv" id="labs">
         <h2>LABS</h2>
-        <a href="lab1/lab1.html">Lab 1</a><br>
-        <a href="lab2/lab2.html">Lab 2</a><br>
-        <a href="lab3/lab3.html">Lab 3</a><br>
-        <a href="lab4/lab4.html">Lab 4</a><br>
-        <a href="lab5/lab5.html">Lab 5</a><br>
-        <a href="lab6/lab6.html">Lab 6</a><br>
-        <a href="lab7/lab7.html">Lab 7</a><br>
-        <a href="lab8/lab8.html">Lab 8</a><br>
-        <a href="lab9/lab9.html">Lab 9</a><br>
-        <a href="lab10/lab10.html">Lab 10</a><br>
-        <a href="lab11/lab11.py">Lab 11</a><br>
-        <a href="lab12/lab12.html">Lab 12</a><br>
-        <a href="lab13/lab13.html">Lab 13</a><br>
-        <a href="lab14/lab14.html">Lab 14</a><br>
-        <a href="lab15/lab15.html">Lab 15</a><br>
-        <a href="lab16/lab16.html">Lab 16</a><br>
-        <a href="lab17/lab17.html">Lab 17</a><br>
+        <a href="lab1/lab1.html">Lab 1 - Simple HTML</a><br>
+        <a href="lab2/lab2.html">Lab 2 - Text Formatting and Inserting Images</a><br>
+        <a href="lab3/lab3.html">Lab 3 - Anchors: Text Hyperlink, Images HyperLinks</a><br>
+        <a href="lab4/lab4.html">Lab 4 - Tables Elements, Lists, and Inline CSS</a><br>
+        <a href="lab5/lab5.html">Lab 5 - Favicon</a><br>
+        <a href="lab6/lab6.html">Lab 6 - Color Representation(Hexadecimal and RBG)</a><br>
+        <a href="lab7/lab7.html">Lab 7 - Index Page Version 1</a><br>
+        <a href="lab8/lab8.html">Lab 8 - Lorem ipsum dolor filler text for CSS practice</a><br>
+        <a href="lab9/lab9.html">Lab 9 - Nav Bar and External CSS </a><br>
+        <a href="lab10/lab10.html">Lab 10 - Group Work: Intro to Javascript</a><br>
+        <a href="lab11/lab11.py">Lab 11 - Group Work: Python Games</a><br>
+        <a href="lab12/lab12.html">Lab 12 - Alert/Prompt/Confirm PopUps and  Arithmetic Calculations</a><br>
+        <a href="lab13/lab13.html">Lab 13 - Age Calculator using Arrays in Javascript</a><br>
+        <a href="lab14/lab14.html">Lab 14 - Shopping Cart using Objects in Javascript</a><br>
+        <a href="lab15/lab15.html">Lab 15 - NINJA: Object population with user input</a><br>
+        <a href="lab16/lab16.html">Lab 16 - Intro to jQuery </a><br>
+        <a href="lab17/lab17.html">Lab 17 - Animations with jQuery</a><br>
       </div>
       <!-- div for image inside the main div-->
       <div class="projImgDiv"></div>
       <!-- div for projects inside the main div-->
-      <div class="textDiv">
+      <div class="textDiv" id="projects">
         <h2>PROJECTS</h2>
-        <a href="project1/index.html">Project 1</a><br>
+        <a href="project1/index.html">Project 1 - Favorite Movies Site</a><br>
       </div>
     </div>
 
@@ -67,8 +98,6 @@
 
     <!-- script for twitter follow -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 
   </body>

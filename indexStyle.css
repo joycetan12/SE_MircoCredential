@@ -8,12 +8,24 @@ body {
 }
 /* style for header */
 .header {
-  padding: 30px;
+  padding: 50px;
   border-style: outset;
   border-color: black;
   background-image: url("img/header.jpg");
   background-size: cover;
   text-align: center;
+}
+/* makes transparent box for text in header */
+.transBox {
+  margin: 80px;
+  padding: 50px;
+  background-color: ghostwhite;
+  /* border: 1px solid black; */
+  opacity: 0.5;
+}
+/* makes font in transBox bold */
+.transBox h1, .transBox h2 {
+  font-weight: bold;
 }
 /* style for top navigation bar */
 .topnav {
@@ -49,7 +61,7 @@ a:hover {
   background-image: url("img/coding.jpg");
   background-size: cover;
   width: 50%;
-  height: 400px;
+  height: 500px;
   margin-bottom: 20px;
 }
 .projImgDiv {
@@ -57,15 +69,16 @@ a:hover {
   background-image: url("img/project.jpg");
   background-size: cover;
   width: 50%;
-  height: 400px;
+  height: 500px;
   margin-bottom: 20px;
 }
 .textDiv {
   border-style: double;
   float: left;
   padding-left: 25px;
+  padding-top: 15px;
   width: 50%;
-  height: 400px;
+  height: 500px;
   margin-bottom: 20px;
 }
 .LI-profile-badge, .twitter-follow {
