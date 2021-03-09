@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Postcard Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+<!-- Aleef edited this part - Start -->
+<div class="content-wrapper">
+		<img src="img/COV-ELP.png" class="logo" alt="NAPS Logo">
+		<nav>
+			<ul>
+				<li><a href="#fact">Information</a></li>
+				<li><a href="#About">About</a></li>
+				<li><a href="#Volunteer">Volunteer</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- Aleef edited this part - End -->
+
+<!-- Tisha edited this part - Start -->
+<div class="hero">
+	<h1>COVID-19 Help Center</h1>
+	<p>Stay informed of any changes</p>
+</div>
+
+<main role="main" id="About" style="text-align: center;">
+	<div class="content-wrapper">
+		<p id="press-quote">Covid-19 spread to 219 countries with over 114000000 plus cases worldwide. — Centers for Disease Control and Prevention (CDC)</p>
+		<p>COVID-19 is caused by a coronavirus called SARS-CoV-2. On March 01, 2020 the first confirmed covid case in the city of New York was recorded. The numbers quickly raised and the City became an epicenter of the pandemic. By April 4th, 2020 12,274 new cases were recorded and a sadly more than approximately 29,000 deaths were reported for the month of. Since then government officials has made large efforts to ensure the safety of all New York Residents by limiting access to places that posed at a risk factor if occupied by its normal number of people e.g. schools, restaurants, churches, bars, parks etc. New York’s Governor developed a phase system in which the state followed to ensure that the covid numbers decreased. New York City seemingly moving through the current phases of reopening but residents must continue to make smart choices and do what’s necessary to protect each other’s health and wellbeing. The phased system has been functioning well and the reopening of New York is happening on a regional basis. According to the states covid information websites;
+		The infection rate is sufficiently low;
+		The health care system has the capacity to absorb a potential resurgence in new cases;
+		Diagnostic testing capacity is sufficiently high to detect and isolate new cases; and
+		Robust contact-tracing capacity is in place to help prevent the spread of the virus.
+		To learn more about New York’s cases and the reopening phases please visit https://forward.ny.gov/ </p>
+		<h2>Our History</h2>
+		<figure>
+			<img src="img/Group (1).png" alt="Megaphone">
+<!-- 			<figcaption>Page details</figcaption> -->
+		</figure>
+		<p>This page was created to raise awareness about covid-19 and also to serve as a guide to finding information about services that are readily available to the public that will help anyone who was impacted by the virus.
+               Stay safe!</p>
+	</div>
+<!-- Tisha edited this part - End -->
+</main>
+
+<!-- Joyce edited this part - Start -->
+<div class="outer-wrapper" id="fact">
+	<header class="clearfix">
+		<h1>Covid-19 Cases</h1>
+		<p class="subtitle">NYC Borough</p>
+	</header>
+	
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src="img1/ny.jpg" alt="New York" width="260" height="260">
+				<p id="info-name">New York State</p>
+			</div>
+		</div>
+		<div class="btn-center">
+			<select id="borough-list">
+				<option value="nyc">Choose a Borough</option>
+				<option value="queens">Queens</option>
+				<option value="brooklyn">Brooklyn</option>
+				<option value="bronx">The Bronx</option>
+				<option value="manhattan">Manhattan</option>
+				<option value="staten">Staten Island</option>
+			</select>
+		</div>
+		<div class="info-holder">
+			<p><strong>Name: </strong><span id="data-name">New York City</span></p>
+			<p><strong>Cases: </strong><span id="data-cases">698,751</span></p>
+			<p><strong>Deaths: </strong><span id="data-deaths">47,388</span></p>
+			<p><strong>Possible Test Site: </strong><span id="data-siteName">Choose a borough</span></p>
+			<p><strong>Test Site Location: </strong><span id="data-siteLocation">Choose a borough</span></p>
+			<p><strong>Test Site Hours: </strong><span id="data-siteHours">Choose a borough</span></p>
+		</div>
+	</div>
+</div>
+<!-- Joyce edited this part - End -->
+
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<!-- Oksana edited this part start-->
+		<header>
+			<h1>Check the Facts</h1>
+			<p class="subtitle">About COVID-19</p>
+		</header>
+		<main role="main">
+			<div class="first step">
+				<h2>1. Choose a Fact</h2>
+				<select name="states" id="states">
+					<option selected disabled value="empty-state">Facts</option>
+					<option value="fc2">Fact 1</option>
+					<option value="fc3">Fact 2</option>
+					<option value="fc4">Fact 3</option>
+					<option value="fc1">Fact 4</option>
+					<option value="fc5">Fact 5</option>
+				</select>
+			</div>
+			<div class="second step">
+				<h2>2. Share the Fact!</h2>
+				<div id="postcard">
+					<p id="greeting">To See the Fact <br><strong>Choose a Fact</strong></p>
+				</div>
+			</div>
+		</main>
+		<!-- Oksana edited this part end-->
+	</div>
+</div>
+
+<!-- Joyce edited this - Start -->
+<script src="js/state-data1.js"></script>
+<script>
+	document.getElementById('borough-list').onchange = function() {
+		var selected = this.value;
+		document.getElementById('data-name').textContent = nysData[this.value].name;
+		document.getElementById('data-cases').textContent = nysData[this.value].cases;
+		document.getElementById('data-deaths').textContent = nysData[this.value].deaths;
+		document.getElementById('data-siteName').textContent = nysData[this.value].siteName;
+		document.getElementById('data-siteLocation').textContent = nysData[this.value].siteLocation;
+		document.getElementById('data-siteHours').textContent = nysData[this.value].siteHours;
+	};
+</script>
+<!-- Joyce edited this - End -->
+
+<footer>
+		<p>Copyright © NYC COVID-19 Citywide Informational Portal<br> Projects The City NYC</p>
+</footer>
+
+<script>
+	var quotesArray = [
+		'The novel coronavirus is named SARS-CoV-2 and the disease is COVID-19. — Healthgrades',
+		'Social distancing and wearing a mask helps slow the spread of infection. — Healthgrades',
+		'Variations, or mutations in the novel coronavirus are occurring on a regular basis, as the virus passes from person to person. — Healthgrades',
+		'There are over fifteen plus testing sites in NYC. — NYC Hospitals',
+		'NYC now offering vaccines to non-essential health workers based on eligibility and work status. — NBC News',
+		'The FDA (Food and Drug Administration) recently approved the antiviral drug, remdesivir (Veklury), for use in hospitalized COVID-19 patients. — Healthgrades'
+		
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+<div class="container" id="Volunteer">
+<!-- Oksana worked on Volunteer Application -->
+<center><h1 style="color: #bb1a34" >Volunteer Application</h1></center>
+	<p>Helping others can reduce stress and provide a healthy outlet to help manage anxiety surrounding the coronavirus outbreak.
+		If you are looking for ways to help your community throughout the outbreak, getting involved with local foodbanks and assistance programs are great places to start.</p>
+	<div class="form-container">
+		<form id="vol-form">
+			<div class="form-section">
+				<label for="first-name">First Name:</label>
+				<input id="first-name" name="first-name" type="text">
+			</div>
+			<div class="form-section">
+				<label for="last-name">Last Name:</label>
+				<input id="last-name" name="last-name" type="text">
+			</div>
+			<div class="form-section">
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email">
+			</div>
+			<div class="form-section">
+				<label for="phone">Phone:</label>
+				<input id="phone" name="phone" type="tel">
+			</div>
+			<div class="form-section">
+				<label for="prev-vol">Borough:</label>
+				<input id="prev-vol" name="prev-vol" type="text">
+			</div>
+			<div class="form-section">
+				<label for="from-year" class="from-label">Available From:</label>
+				<select id="from-year" name="from-year">
+					<option value="blank"></option>
+					<option value="1999">Before 6:00 am</option>
+					<option value="2000">7:00 am</option>
+					<option value="2001">8:00 am</option>
+					<option value="2002">9:00 am</option>
+					<option value="2003">10:00 am</option>
+					<option value="2004">11:00 am</option>
+					<option value="2005">12:00 pm</option>
+					<option value="2006">1:00 pm</option>
+					<option value="2007">2:00 pm</option>
+					<option value="2008">3:00 pm</option>
+					<option value="2009">4:00 pm</option>
+					<option value="2010">5:00 pm</option>
+					<option value="2011">6:00 pm</option>
+					<option value="2012">7:00 pm</option>
+					<option value="2013">8:00 pm</option>
+					<option value="2014">9:00 pm</option>
+					<option value="2015">10:00 pm</option>
+					<option value="2016">11:00 pm</option>
+					<option value="2017">12:00 am</option>
+				</select>
+				<br><label for="to-year" class="to-label">Available To:</label>
+				<select id="to-year" name="to-year">
+					<option value="blank"></option>
+					<option value="1999">Before 6:00 am</option>
+					<option value="2000">7:00 am</option>
+					<option value="2001">8:00 am</option>
+					<option value="2002">9:00 am</option>
+					<option value="2003">10:00 am</option>
+					<option value="2004">11:00 am</option>
+					<option value="2005">12:00 pm</option>
+					<option value="2006">1:00 pm</option>
+					<option value="2007">2:00 pm</option>
+					<option value="2008">3:00 pm</option>
+					<option value="2009">4:00 pm</option>
+					<option value="2010">5:00 pm</option>
+					<option value="2011">6:00 pm</option>
+					<option value="2012">7:00 pm</option>
+					<option value="2013">8:00 pm</option>
+					<option value="2014">9:00 pm</option>
+					<option value="2015">10:00 pm</option>
+					<option value="2016">11:00 pm</option>
+					<option value="2017">12:00 am</option>
+				</select>
+			</div>
+			<input id="submit" type="submit" value="Submit" onclick="clicked();">
+		</form>
+	</div>
+</div>
+<footer>
+	<p>Copyright © WHO.int Emergencies</p>
+</footer>
+
+<script>
+	var states = document.getElementById('states');
+
+	states.onchange = function() {
+		// console.log('state index: ' + states.selectedIndex);
+		// console.log('state name: ' + states.options[states.selectedIndex].text);
+		// console.log('img/' + states.value + '@2x.jpg');
+		document.getElementById('postcard').style.backgroundImage = 'url(img/' + states.value + '@2x.jpg)';
+		//Oksana edited this part start
+		document.getElementById('greeting').innerHTML = '';
+		//Oksana edited this part end
+		//document.getElementById('state-heading').innerHTML = states.options[states.selectedIndex].text;
+	}
+	function clicked() {
+    		alert('We received your application. Thank you!');
+	}
+</script>
+
+</body>
+</html>
