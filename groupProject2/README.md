@@ -1,6 +1,6 @@
 # groupProject2
 
-**TASK:** Modify and redesign an existing webpage with your group.
+**TASK:** Modify and re-engineering an existing webpage with your group.
 
 **Joyce:** Worked on Covid-19 Cases Section.
 - In state-data1.js, I changed the data to represent covid-19 data in every borough of NYC instead of data about the states in the U.S.
