@@ -6,6 +6,13 @@
 body {
   background-color: #FFE1AD;
 }
+/* style for footer */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
 /* style for header */
 .header {
   padding: 50px;
@@ -20,7 +27,6 @@ body {
   margin: 80px;
   padding: 50px;
   background-color: ghostwhite;
-  /* border: 1px solid black; */
   opacity: 0.5;
 }
 /* makes font in transBox bold */
@@ -73,6 +79,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .textDiv {
+  background-color: #F0FDFD;
   border-style: double;
   float: left;
   padding-left: 25px;
