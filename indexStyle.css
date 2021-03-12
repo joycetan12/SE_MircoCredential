@@ -13,6 +13,10 @@ footer {
   background-color: black;
   color: white;
 }
+footer a{
+  color: white;
+  text-decoration: none;
+}
 /* style for header */
 .header {
   padding: 50px;
@@ -87,6 +91,11 @@ a:hover {
   width: 50%;
   height: 500px;
   margin-bottom: 20px;
+}
+.textDiv a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 .LI-profile-badge, .twitter-follow {
   float: left;
