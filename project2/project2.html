@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width+device-width">
+    <title>JATI GAMES</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h1>JATI GAMES</h1>
+    </div>
+
+    <div class="row">
+      <!-- column 1 -->
+      <div class="column1">
+        <h2>Welcome to JATI Games:</h2>
+        <h3>1. Coin Toss</h3>
+        <h3>2. Math Practice Problems</h3>
+        <h3>3. Guess the Color</h3>
+        <h3>4. Rock Paper Scissors</h3>
+        <!-- buttons for games -->
+        <button class="game1" onclick="coinToss()">Game 1</button>
+        <button class="game2" onclick="mathGame()">Game 2</button>
+        <button class="game3" onclick="guessColor()">Game 3</button>
+        <button class="game4" onclick="rockPaperScissors()">Game 4</button>
+        <!-- score -->
+        <h3>Score: <span id="score">0</span></h3>
+        <button class="reset" onclick="resetScore()">Reset Score</button>
+      </div>
+      <!-- column 2 -->
+      <div class="column2">
+        <p id="gameView"></p>
+      </div>
+
+  </body>
+</html>
