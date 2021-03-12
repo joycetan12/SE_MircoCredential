@@ -1,5 +1,6 @@
 score = 0;
 
+// Coin Toss Game
 function coinToss(){
   // game rules
   document.getElementById("gameView").innerHTML = "Welcome to Coin Toss<br> Rules: Flip a coin. Earn 1 point for heads and lose 1 point for tails.<br><br>";
@@ -23,6 +24,7 @@ function coinToss(){
   document.getElementById("score").innerHTML = score;
 }
 
+// Math Practice Problem Game
 function mathGame(){
   // game rules
   document.getElementById("gameView").innerHTML = "Welcome to Math Practice Problems<br> Rules: Solve the math problem. Earn 1 point for correct answer and lose 1 point for wrong answer.<br><br>";
@@ -53,7 +55,7 @@ function mathGame(){
       ans = x / y;
     }
     // user's  answer
-    userAns = parseFloat(prompt("Solve: " + x.toString() + op + y.toString() + " = "));
+    userAns = parseFloat(prompt("Round " + (i+1) + " - Solve: " + x.toString() + op + y.toString() + " = "));
     // checks user's answer
     if (userAns == ans){
       document.getElementById("gameView").innerHTML += "Your answer: " + userAns + " Correct answer: " + ans + "<br>CORRECT!! You earned 1 point<br><br>";
@@ -68,6 +70,7 @@ function mathGame(){
   document.getElementById("score").innerHTML = score;
 }
 
+// Guess the Color Game
 function guessColor(){
   // game rules
   document.getElementById("gameView").innerHTML = "Welcome to Guess the Color<br> Rules: Guess the color. Earn 1 point for correct guess and lose 1 point for wrong guess<br><br>";
@@ -84,7 +87,7 @@ function guessColor(){
     else if (colorCode == 3) color = "green";
     else color = "blue";
     // user's guess
-    guess = prompt("Guess a color: (red/yellow/pink/green/blue)");
+    guess = prompt("Round " + (i+1) + " - Guess a color: (red/yellow/pink/green/blue)");
     // checks user's guess
     if (guess == color){
       document.getElementById("gameView").innerHTML += "Your guess: " + guess + " Correct color: " + color + "<br>CORRECT!! You earned 1 point<br><br>";
@@ -99,6 +102,7 @@ function guessColor(){
   document.getElementById("score").innerHTML = score;
 }
 
+// Rock, Paper, Scissors Game
 function rockPaperScissors(){
   // game rules
   document.getElementById("gameView").innerHTML = "Welcome to Rock Paper Scissors<br> Rules: Choose rock paper or scissors. Earn 1 point if you beat the computer and lose 1 point if the computer beats you<br><br>";
@@ -113,25 +117,25 @@ function rockPaperScissors(){
     else if (randComp == 1) comp = "paper";
     else comp = "scissors";
     // user's choice
-    user = prompt("You used: (rock/paper/scissors)");
+    user = prompt("Round " + (i+1) + " - Choose: (rock/paper/scissors)");
     // checks is user won or comp won
     if (user.toLowerCase() == comp){
-      document.getElementById("gameView").innerHTML += "You chose: " + user + " Comp chose: " + comp + "<br>Its a tie -- No points<br><br>";
+      document.getElementById("gameView").innerHTML += "You chose: " + user + " Computer chose: " + comp + "<br>Its a tie -- No points<br><br>";
     }
     else if (user.toLowerCase() == "rock" && comp == "scissors"){
-      document.getElementById("gameView").innerHTML += "You chose: " + user + " Comp chose: " + comp + "<br>You won -- You earned 1 point<br><br>";
+      document.getElementById("gameView").innerHTML += "You chose: " + user + " Computer chose: " + comp + "<br>You won -- You earned 1 point<br><br>";
       score += 1;
     }
     else if (user.toLowerCase() == "paper" && comp == "rock"){
-      document.getElementById("gameView").innerHTML += "You chose: " + user + " Comp chose: " + comp + "<br>You won -- You earned 1 point<br><br>";
+      document.getElementById("gameView").innerHTML += "You chose: " + user + " Computer chose: " + comp + "<br>You won -- You earned 1 point<br><br>";
       score += 1;
     }
     else if (user.toLowerCase() == "scissors" && comp == "paper"){
-      document.getElementById("gameView").innerHTML += "You chose: " + user + " Comp chose: " + comp + "<br>You won -- You earned 1 point<br><br>";
+      document.getElementById("gameView").innerHTML += "You chose: " + user + " Computer chose: " + comp + "<br>You won -- You earned 1 point<br><br>";
       score += 1;
     }
     else{
-      document.getElementById("gameView").innerHTML += "You chose: " + user + " Comp chose: " + comp + "<br>Computer won -- You lost 1 point<br><br>";
+      document.getElementById("gameView").innerHTML += "You chose: " + user + " Computer chose: " + comp + "<br>Computer won -- You lost 1 point<br><br>";
       score -= 1;
     }
   }
