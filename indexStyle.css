@@ -4,7 +4,7 @@
 }
 /* background color for webpage */
 body {
-  background-color: #FFE1AD;
+  background-color: #AB7858;
 }
 /* style for footer */
 footer {
@@ -83,7 +83,6 @@ a:hover {
   margin-bottom: 20px;
 }
 .textDiv {
-  background-color: #F0FDFD;
   border-style: double;
   float: left;
   padding-left: 25px;
